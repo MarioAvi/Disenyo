@@ -101,7 +101,12 @@
 .ml-11 {
     margin-left: calc(var(--pcolumna) * 11);
 }
-
+.ver {
+    display: block;
+}
+.nover {
+    display: none;
+}
 
 
 @media screen and (min-width:768px) {
