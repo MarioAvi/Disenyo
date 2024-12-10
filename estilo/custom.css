@@ -64,6 +64,35 @@ li a:hover:not(.active) {
   font-weight: bold;
 }
 
+.seccion {
+  text-align: center;
+}
+
+.fondo1 {
+  background-color: burlywood;
+}
+
+.fotoproducto{
+  width: 80%;
+  margin: 10%;
+  margin-bottom: 0%;
+  border-radius: 10%;
+  box-shadow: 1px 1px 40px rgb(129, 107, 79);
+  border: 3px solid burlywood;
+}
+
+.descripcion {
+  width: 80%;
+  margin: 10%;
+  margin-top: 5%;
+  text-align: center;
+}
+
+.footer {
+  background-color: rgb(3, 91, 94);
+  color: whitesmoke;
+}
+
 @media screen and (min-width:768px) {
   .foto {
     width: 70%;
