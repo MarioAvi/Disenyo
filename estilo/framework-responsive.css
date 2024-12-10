@@ -1,5 +1,5 @@
 :root{
-    --base:980;
+    --base:1600;
     --tbase:calc(var(--base) * 1px);;
     --tcolumna:calc(var(--base) / 12);
     --pcolumna:calc(var(--tcolumna)/var(--base)*100%);
