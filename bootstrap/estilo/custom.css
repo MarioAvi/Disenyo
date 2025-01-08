@@ -1,0 +1,28 @@
+.borde{
+    border: 1px solid black;
+}
+
+.verde{
+    background-color: rgb(55, 255, 55);
+    min-height: 50px;
+}
+
+.rosa{
+    background-color: rgb(255, 55, 212);
+    min-height: 50px;
+}
+
+.rojo{
+    background-color: rgb(254, 0, 0);
+    min-height: 50px;
+}
+
+.naranja{
+    background-color: rgb(255, 128, 0);
+    min-height: 50px;
+}
+
+.azul{
+    background-color: rgb(0, 0, 255);
+    min-height: 50px;
+}
