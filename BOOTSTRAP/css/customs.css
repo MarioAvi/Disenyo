@@ -1,0 +1,66 @@
+.borde{
+    border:1px solid black;
+}
+
+.verde{
+    background-color: rgb(53, 243, 53);
+    min-height: 50px;
+}
+.rojo{
+    background-color: red;
+    min-height: 50px;
+}
+.rosa{
+    background-color: rgb(245, 75, 208);
+    min-height: 50px;
+}
+.naranja{
+    background-color: orangered;
+    min-height: 50px;
+}
+.azul{
+    background-color: blue;
+    min-height: 50px;
+}
+.azulclaro{
+    background-color: lightblue;
+    min-height: 50px;
+}
+.azul2{
+    background-color: aqua;
+    min-height: 50px;
+}
+.gris{
+    background-color: rgb(204, 190, 190);
+    min-height: 50px;
+}
+
+h1{
+    text-align: center;
+    font-style: italic;
+}
+p{
+    text-align: center;
+}
+/*para cambios a partir de sm*/
+@media screen and (min-width: 576px) {
+    .verde{
+        min-height: 100px;
+    }
+}
+/*para cambios a partir de md*/
+@media screen and (min-width: 768px){
+
+}
+/*para cambios a partir de lg*/
+@media  screen and (min-width: 992px) {
+    
+}
+/*para cambios a partir de xl*/
+@media screen and (min-width: 1200px){
+
+}
+/*para cambios a partir de xxl*/
+@media screen and (min-width: 1400px){
+
+}
