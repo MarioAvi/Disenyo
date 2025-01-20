@@ -36,6 +36,11 @@
     color: yellow !important;
 }
 
+.sin{
+    margin: 0;
+    padding: 0;
+}
+
 
 /*para cambios a partir de sm*/
 @media screen and (min-width: 576px) {

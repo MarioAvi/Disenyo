@@ -1,0 +1,29 @@
+.col-12{
+    border: 1px solid black;
+}
+
+.navbar {
+    background-color: antiquewhite !important;
+}
+
+.nav-link{
+    color: green;
+}
+
+.nav-link:hover{
+    color: aliceblue;
+}
+
+.navbar-nav{
+    text-align: center;
+}
+
+.sin{
+    margin: 0;
+    padding: 0;
+}
+
+/*para cambios a partir de sm*/
+@media screen and (min-width: 576px) {
+    
+}
