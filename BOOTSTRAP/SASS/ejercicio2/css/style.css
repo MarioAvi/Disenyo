@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+html {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+body {
+  font: 400 1rem "Nunito", sans-serif;
+}
+
+h1 {
+  font: 700 3rem "Nunito", sans-serif;
+}
+
+h2 {
+  font: 700 2rem "Nunito", sans-serif;
+}
+
+h3 {
+  font: 700 1.5rem "Nunito", sans-serif;
+}/*# sourceMappingURL=style.css.map */
