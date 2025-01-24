@@ -26,18 +26,20 @@ h{
     &2{
         font: $h2;
     }
-    &2{
+    &3{
         font: $h3;
     }
 }
 
 header{
+
     img{
         width: 10%;
         float: left;
     }
     
     text-align: center;
+
     h1, h2{
         width: 90%;
     }
