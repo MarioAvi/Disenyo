@@ -82,4 +82,12 @@ nav footer div a {
 nav p {
   background-color: #eee;
   margin: 0;
+  font: 300 0.8rem "Nunito", sans-serif;
+}
+nav p a {
+  text-decoration: none;
+  color: rgb(30, 30, 30);
+}
+nav p a:hover {
+  font-weight: 400;
 }/*# sourceMappingURL=style.css.map */
