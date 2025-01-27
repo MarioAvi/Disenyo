@@ -90,6 +90,21 @@ nav{
     }
 
     footer{
-        
+        text-align: center;
+        div{
+            background-color: $background;
+            margin-bottom: 0.5em;
+            padding: 0.2em 0 0 0;
+            img{
+                width: 3em;
+            }
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+    p{
+        background-color: $background;
+        margin: $default-margin;
     }
 }
