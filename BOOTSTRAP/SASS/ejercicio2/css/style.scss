@@ -9,9 +9,12 @@ $cuerpo: $peso-cuerpo $size-cuerpo $font-family;
 $h1: $peso-titulos $size-cuerpo*3 $font-family;
 $h2: $peso-titulos $size-cuerpo*2 $font-family;
 $h3: $peso-titulos $size-cuerpo*1.5 $font-family;
+$menu: $peso-titulos $size-cuerpo*1.1 $font-family;
 
 $background: #eee;
+$item-hover: #ccc;
 $foreground: rgb(30,30,30);
+
 $default-margin: 0;
 $default-padding: 0;
 
@@ -49,10 +52,44 @@ header{
 
     h1, h2{
         width: 90%;
-        margin: $defaul-margin;
+        margin: $default-margin;
     }
     a{
         text-decoration: none;
         color: $foreground;
+    }
+}
+
+nav{
+    background-color: $background;
+    text-align: center;
+    color: $foreground;
+    padding: 0.1em;
+    margin: 0.5em 0 0 0;
+    text-transform: uppercase;
+    ul{
+        list-style: none;
+        margin: $default-margin;
+        li{
+            display: inline-block;
+            margin: $default-margin;
+            padding: 0.2em;
+            font: $menu;
+            a{
+                color: $foreground;
+                text-decoration: none;
+                &:hover{
+                    color: $item-hover;
+                }
+            }
+        }
+    }
+
+    section{
+        min-height: 20em;
+    }
+
+    footer{
+        
     }
 }
