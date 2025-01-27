@@ -6,16 +6,33 @@ html {
 
 body {
   font: 400 1rem "Nunito", sans-serif;
+  color: rgb(30, 30, 30);
 }
 
 h1 {
   font: 700 3rem "Nunito", sans-serif;
 }
-
 h2 {
   font: 700 2rem "Nunito", sans-serif;
 }
-
 h3 {
   font: 700 1.5rem "Nunito", sans-serif;
+}
+
+header {
+  background-color: #eee;
+  text-align: center;
+  text-align: center;
+}
+header img {
+  width: 10%;
+  float: left;
+}
+header h1, header h2 {
+  width: 90%;
+  margin: 0;
+}
+header a {
+  text-decoration: none;
+  color: rgb(30, 30, 30);
 }/*# sourceMappingURL=style.css.map */

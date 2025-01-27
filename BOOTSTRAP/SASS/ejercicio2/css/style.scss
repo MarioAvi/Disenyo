@@ -3,7 +3,7 @@
 $max-width: 1400px;
 $font-family: "Nunito", sans-serif;
 $peso-cuerpo: 400;
-$pesp-titulos: 700;
+$peso-titulos: 700;
 $size-cuerpo: 1rem;
 $cuerpo: $peso-cuerpo $size-cuerpo $font-family;
 $h1: $peso-titulos $size-cuerpo*3 $font-family;
@@ -12,6 +12,8 @@ $h3: $peso-titulos $size-cuerpo*1.5 $font-family;
 
 $background: #eee;
 $foreground: rgb(30,30,30);
+$default-margin: 0;
+$default-padding: 0;
 
 html{
     max-width: $max-width;
@@ -37,6 +39,7 @@ h{
 
 header{
     background-color: $background;
+    text-align: center;
     img{
         width: 10%;
         float: left;
@@ -46,8 +49,10 @@ header{
 
     h1, h2{
         width: 90%;
+        margin: $defaul-margin;
     }
     a{
         text-decoration: none;
+        color: $foreground;
     }
 }
