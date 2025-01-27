@@ -10,6 +10,9 @@ $h1: $peso-titulos $size-cuerpo*3 $font-family;
 $h2: $peso-titulos $size-cuerpo*2 $font-family;
 $h3: $peso-titulos $size-cuerpo*1.5 $font-family;
 
+$background: #eee;
+$foreground: rgb(30,30,30);
+
 html{
     max-width: $max-width;
     margin: 0 auto;
@@ -17,6 +20,7 @@ html{
 
 body{
     font: $cuerpo;
+    color: $foreground
 }
 
 h{
@@ -32,7 +36,7 @@ h{
 }
 
 header{
-
+    background-color: $background;
     img{
         width: 10%;
         float: left;
