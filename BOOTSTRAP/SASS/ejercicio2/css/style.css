@@ -67,6 +67,7 @@ nav section {
 }
 nav footer {
   text-align: center;
+  font-weight: 300;
 }
 nav footer div {
   background-color: #eee;
