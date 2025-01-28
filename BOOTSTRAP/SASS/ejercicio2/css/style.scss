@@ -109,11 +109,14 @@ nav{
     p{
         background-color: $background;
         margin: $default-margin;
-        font:$pie;
+        font: $pie;
+
         a{
             text-decoration: none;
             color: $foreground;
+
             &:hover{
+
                 font-weight: $peso-cuerpo;
             }
         }
