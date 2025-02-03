@@ -1,0 +1,39 @@
+@mixin reset-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@mixin menu-horizontal{
+    ul{
+        @include reset-list;
+        li{
+
+            a{
+                display: block;
+                padding: 10px;
+                text-decoration: none;
+                color: $colortexto;
+                &:hover{
+                    background-color: $color1;
+                    color: $color2;
+                }
+            }
+        }
+    }
+}
+@mixin menu-vertical{
+    ul{
+        @include reset-list;
+
+        li{
+
+            a{
+
+                &:hover{
+
+                }
+            }
+        }
+    }
+}
