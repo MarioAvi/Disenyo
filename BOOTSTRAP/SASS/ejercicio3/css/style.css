@@ -56,4 +56,24 @@ html {
 body.dark .banner {
   background-color: #6b717f;
   color: #d2e1dd;
+}
+
+li:nth-child(1) {
+  background-color: #004080;
+}
+
+li:nth-child(2) {
+  background-color: #004d99;
+}
+
+li:nth-child(3) {
+  background-color: #0059b3;
+}
+
+li:nth-child(4) {
+  background-color: #0066cc;
+}
+
+li:nth-child(5) {
+  background-color: #0073e6;
 }/*# sourceMappingURL=style.css.map */

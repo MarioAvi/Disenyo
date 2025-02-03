@@ -48,6 +48,8 @@ $dark-text: #d2e1dd;
 
 $base-color: $light-text;
 
-@for $ir from 1 through 4 {
-    ul: nth.child()
+@for $i from 1 through 5 {
+    li:nth-child(#{$i}) {
+        background-color: lighten($base-color, $i * 5%);
+    }
 }
