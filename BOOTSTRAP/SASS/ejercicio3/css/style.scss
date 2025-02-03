@@ -48,8 +48,26 @@ $dark-text: #d2e1dd;
 
 $base-color: $light-text;
 
+@function color-aleatorio($tono:false) {
+    @if $tono == 'rojo'{
+        @return rgb(random(256)-1, 0, 0);
+    }@else if $tono == 'verde'{
+
+    @return rgb(0, random(256)-1, 0);
+
+    }@else if $tono == 'azul'{
+
+    @return rgb(0, 0, random(256)-1);
+
+    }@else {
+
+       @return rgb(random(256)-1, random(256)-1, random(256)-1);
+
+    }
+}
+
 @for $i from 1 through 5 {
     li:nth-child(#{$i}) {
-        background-color: lighten($base-color, $i * 5%);
+        background-color: color-aleatorio();
     }
 }
