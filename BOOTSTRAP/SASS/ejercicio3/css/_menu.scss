@@ -1,0 +1,50 @@
+@mixin reset-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@mixin menu-horizontal{
+    ul{
+        @include reset-list;
+        margin: $default-margin;
+        padding: 0.2em;
+        font: $menu;
+        li{
+            margin: $default-margin;
+            padding: 0.2em;
+            font: $menu;
+            display: inline-block;
+            a{
+                color: $colortexto;
+                text-decoration: none;
+                &:hover{
+                    background-color: $color1;
+                    color: $color2;
+                }
+            }
+        }
+    }
+}
+@mixin menu-vertical{
+    ul{
+        @include reset-list;
+        margin: $default-margin;
+        padding: 0.2em;
+        font: $menu;
+        li{
+            margin: $default-margin;
+            padding: 0.2em;
+            font: $menu;
+            display: block;
+            a{
+                color: $colortexto;
+                text-decoration: none;
+                &:hover{
+                    background-color: $color1;
+                    color: $color2;
+                }
+            }
+        }
+    }
+}

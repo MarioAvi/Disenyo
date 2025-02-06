@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+nav {
+  background-color: #FF69B4;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 0.1em;
+  margin: 0.5em 0 0 0;
+  text-transform: uppercase;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0.2em;
+  font: 700 1.1rem "Nunito", sans-serif;
+}
+nav ul li {
+  margin: 0;
+  padding: 0.2em;
+  font: 700 1.1rem "Nunito", sans-serif;
+  display: inline-block;
+}
+nav ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  background-color: #FF69B4;
+  color: #FFC0CB;
+}
+
+html {
+  background-color: #FFC0CB;
+  color: #FFFFFF;
+  font: 400 1rem "Nunito", sans-serif;
+}
+
+.cuadrado {
+  width: 100px;
+  height: 100px;
+  background-color: #FF69B4;
+}
+
+.redondo {
+  width: 100px;
+  height: 100px;
+  background-color: #FF69B4;
+  border-radius: 50px;
+}
+
+.banner {
+  background-color: #6b717f;
+  color: #d2e1dd;
+}
+body.dark .banner {
+  background-color: #6b717f;
+  color: #d2e1dd;
+}
+
+li:nth-child(1) {
+  background-color: rgb(218, 158, 238);
+}
+
+li:nth-child(2) {
+  background-color: rgb(119, 253, 117);
+}
+
+li:nth-child(3) {
+  background-color: rgb(168, 245, 202);
+}
+
+li:nth-child(4) {
+  background-color: rgb(130, 111, 29);
+}
+
+li:nth-child(5) {
+  background-color: rgb(168, 235, 52);
+}/*# sourceMappingURL=style.css.map */

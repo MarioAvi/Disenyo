@@ -1,0 +1,9 @@
+nav{
+    background-color: $color1;
+    text-align: center;
+    color: $colortexto;
+    padding: 0.1em;
+    margin: 0.5em 0 0 0;
+    text-transform: uppercase;
+    @include menu-horizontal;
+}

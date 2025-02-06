@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+html {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+body {
+  font: 400 1rem "Nunito", sans-serif;
+  color: rgb(30, 30, 30);
+}
+
+h1 {
+  font: 700 3rem "Nunito", sans-serif;
+}
+h2 {
+  font: 700 2rem "Nunito", sans-serif;
+}
+h3 {
+  font: 700 1.5rem "Nunito", sans-serif;
+}
+
+header {
+  background-color: #eee;
+  text-align: center;
+  text-align: center;
+}
+header img {
+  width: 10%;
+  float: left;
+}
+header h1, header h2 {
+  width: 90%;
+  margin: 0;
+}
+header a {
+  text-decoration: none;
+  color: rgb(30, 30, 30);
+}
+
+nav {
+  background-color: #eee;
+  text-align: center;
+  color: rgb(30, 30, 30);
+  padding: 0.1em;
+  margin: 0.5em 0 0 0;
+  text-transform: uppercase;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+}
+nav ul li {
+  display: inline-block;
+  margin: 0;
+  padding: 0.2em;
+  font: 700 1.1rem "Nunito", sans-serif;
+}
+nav ul li a {
+  color: rgb(30, 30, 30);
+  text-decoration: none;
+}
+nav ul li a:hover {
+  color: #ccc;
+}
+nav section {
+  min-height: 20em;
+}
+nav footer {
+  text-align: center;
+  font-weight: 300;
+}
+nav footer div {
+  background-color: #eee;
+  margin-bottom: 0.5em;
+  padding: 0.2em 0 0 0;
+}
+nav footer div img {
+  width: 3em;
+}
+nav footer div a {
+  text-decoration: none;
+}
+nav p {
+  background-color: #eee;
+  margin: 0;
+  font: 300 0.8rem "Nunito", sans-serif;
+}
+nav p a {
+  text-decoration: none;
+  color: rgb(30, 30, 30);
+}
+nav p a:hover {
+  font-weight: 400;
+}/*# sourceMappingURL=style.css.map */

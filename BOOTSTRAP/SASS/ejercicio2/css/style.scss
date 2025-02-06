@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+$max-width: 1400px;
+$font-family: "Nunito", sans-serif;
+$peso-cuerpo: 400;
+$peso-pie:300;
+$peso-titulos: 700;
+$size-cuerpo: 1rem;
+$cuerpo: $peso-cuerpo $size-cuerpo $font-family;
+$h1: $peso-titulos $size-cuerpo*3 $font-family;
+$h2: $peso-titulos $size-cuerpo*2 $font-family;
+$h3: $peso-titulos $size-cuerpo*1.5 $font-family;
+$menu: $peso-titulos $size-cuerpo*1.1 $font-family;
+$pie: $peso-pie $size-cuerpo*0.8 $font-family;
+
+$background: #eee;
+$item-hover: #ccc;
+$foreground: rgb(30,30,30);
+
+$default-margin: 0;
+$default-padding: 0;
+
+html{
+    max-width: $max-width;
+    margin: 0 auto;
+}
+
+body{
+    font: $cuerpo;
+    color: $foreground
+}
+
+h{
+    &1{
+        font: $h1;
+    }
+    &2{
+        font: $h2;
+    }
+    &3{
+        font: $h3;
+    }
+}
+
+header{
+    background-color: $background;
+    text-align: center;
+    img{
+        width: 10%;
+        float: left;
+    }
+    
+    text-align: center;
+
+    h1, h2{
+        width: 90%;
+        margin: $default-margin;
+    }
+    a{
+        text-decoration: none;
+        color: $foreground;
+    }
+}
+
+nav{
+    background-color: $background;
+    text-align: center;
+    color: $foreground;
+    padding: 0.1em;
+    margin: 0.5em 0 0 0;
+    text-transform: uppercase;
+    ul{
+        list-style: none;
+        margin: $default-margin;
+        li{
+            display: inline-block;
+            margin: $default-margin;
+            padding: 0.2em;
+            font: $menu;
+            a{
+                color: $foreground;
+                text-decoration: none;
+                &:hover{
+                    color: $item-hover;
+                }
+            }
+        }
+    }
+
+    section{
+        min-height: 20em;
+    }
+
+    footer{
+        text-align: center;
+        font-weight: $peso-pie;
+        div{
+            background-color: $background;
+            margin-bottom: 0.5em;
+            padding: 0.2em 0 0 0;
+            img{
+                width: 3em;
+            }
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+    p{
+        background-color: $background;
+        margin: $default-margin;
+        font: $pie;
+
+        a{
+            text-decoration: none;
+            color: $foreground;
+
+            &:hover{
+
+                font-weight: $peso-cuerpo;
+            }
+        }
+    }
+}
