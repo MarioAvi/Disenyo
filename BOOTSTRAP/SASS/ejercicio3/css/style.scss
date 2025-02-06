@@ -1,6 +1,6 @@
 // IMPORTS ************************************************************************************************************/
 @import url('https://fonts.googleapis.com/css?family=Nunito:300,400,700');
-
+@import 'variables';
 
 
 /* ESTILOS GLOBALES ***************************************************************************************************/
@@ -13,26 +13,23 @@ html {
 body {
     font: $cuerpo;
     color: $default-foreground;
+    margin: 0.5em;
+    @include fuente-titulos;
 }
 
-h {
-    &1 {
-        font: map-get($font-weights, "bold") map-get($font-sizes, quote(#{&})) $font-family;
+@media (max-width: 768px) {
+
+    body {
+        margin: $default-margin;
     }
 
-    &2 {
-        font: map-get($font-weights, "bold") map-get($font-sizes, quote(#{&})) $font-family;
-    }
-
-    &3 {
-        font: map-get($font-weights, "bold") map-get($font-sizes, quote(#{&})) $font-family;
-    }
 }
 
 a {
     text-decoration: none;
     color: $default-foreground;
 }
+
 
 /* HEADER *************************************************************************************************************/
 
@@ -46,59 +43,133 @@ header {
         float: left;
     }
 
-    h1,
+    h1 {
+        width: 90%;
+        color: color-aleatorio("red");
+    }
+
     h2 {
         width: 90%;
-        margin: $default-margin;
+        color: color-aleatorio("green");
+    }
+
+    @media (max-width: 768px) {
+
+        img {
+            width: 5em;
+            float: none;
+        }
+
+        h1,
+        h2 {
+            float: none;
+            width: 100%;
+        }
+
     }
 
 }
+
 
 /* NAV ****************************************************************************************************************/
 
 nav {
     background-color: $default-background;
     padding: 0.1em;
-    margin: 0.5em 0 0 0;
+    margin: $separador-margin;
     text-align: center;
     text-transform: uppercase;
 
     ul {
-        list-style: none;
-        margin: $default-margin;
+        @include lista-horizontal;
 
-        li {
-            display: inline-block;
-            margin: $default-margin;
-            padding: 0.2em;
-            font: map-get($font-weights, "bold") map-get($font-sizes, quote(#{&})) $font-family;
+        a {
+            font-weight: map-get($font-weights, "regular");
 
-            a {
-                font-weight: map-get($font-weights, "regular");
-
-                &:hover {
-                    text-decoration: underline;
-                    font-weight: map-get($font-weights, "bold");
-                }
+            &:hover {
+                text-decoration: underline;
+                font-weight: map-get($font-weights, "bold");
             }
         }
     }
 }
 
+@media (max-width: 768px) {
+
+    nav {
+        margin: $default-margin;
+    }
+
+    ul li {
+        width: 100%;
+    }
+
+}
+
+
 /* SECTION ************************************************************************************************************/
 
 section {
-    min-height: 20em;
+
+    margin: $separador-margin;
+
+    article {
+        width: 33%;
+        display: inline-block;
+        min-height: 16em;
+
+        img {
+            width: 25%;
+            float: left;
+            padding: 0 1em 0 0;
+        }
+
+        div {
+            width: 65%;
+            float: left;
+            padding: 1em 1em 0 0;
+        }
+
+    }
+
+    @include fondo-article;
+
+    @media (max-width: 992px) {
+
+        article {
+            width: 49.7%;
+        }
+
+    }
+
+    @media (max-width: 768px) {
+
+        article {
+            width: 100%;
+            display: block;
+        }
+
+    }
 }
+
+@media (max-width: 768px) {
+
+    section {
+        margin: $default-margin;
+    }
+
+}
+
 
 /* FOOTER *************************************************************************************************************/
 
 footer {
+
+    margin: $separador-margin;
     text-align: center;
 
     div {
         background-color: $default-background;
-        margin-bottom: 0.5em;
         padding: 0.2em 0 0 0;
 
         img {
@@ -107,8 +178,8 @@ footer {
     }
 
     p {
+        margin: $separador-margin;
         background-color: $default-background;
-        margin: $default-margin;
         padding: 0.1em 0;
         font: map-get($font-weights, "light") map-get($font-sizes, quote(#{&})) $font-family;
 
@@ -117,4 +188,17 @@ footer {
             font-weight: map-get($font-weights, "bold");
         }
     }
+}
+
+@media (max-width: 768px) {
+
+    footer {
+
+        margin: $default-margin;
+
+        p {
+            margin: $default-margin;
+        }
+    }
+
 }
