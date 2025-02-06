@@ -1,73 +1,148 @@
-@import 'variablesrosa';
-@import 'menu';
-@import 'menu-horizontal';
+// IMPORTS ************************************************************************************************************/
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,700');
 
-html{
-    background-color: $color2;
-    color: $colortexto;
+// VARIABLES SIMPLES ///////////////////////////////////////////////////////////////////////////////////////////////////
+
+$font-sizes: (
+    "cuerpo": 1rem,
+    "h3": 150%,
+    "h2": 200%,
+    "h1": 300%,
+    "nav ul li": 110%,
+    "footer p": 80%
+);
+$font-weights: (
+    "light": 300,
+    "regular": 400,
+    "bold": 700
+);
+$font-family: "Nunito", sans-serif;
+
+$max-width: 1400px;
+$default-margin: 0;
+$default-padding: 0;
+
+$default-foreground: rgb(30, 30, 30);
+$default-background: #eee;
+
+
+// VARIABLES COMPUESTAS ////////////////////////////////////////////////////////////////////////////////////////////////
+
+$cuerpo: map-get($font-weights, "regular") map-get($font-sizes, "cuerpo") $font-family;
+
+
+/* ESTILOS GLOBALES ***************************************************************************************************/
+
+html {
+    max-width: $max-width;
+    margin: 0 auto;
+}
+
+body {
     font: $cuerpo;
+    color: $default-foreground;
 }
 
-@mixin avatar($size, $circulo:false){
-    width: $size;
-    height: $size;
-    background-color: $color1;
-    @if $circulo{
-        border-radius: $size / 2;
+h {
+    &1 {
+        font: map-get($font-weights, "bold") map-get($font-sizes, quote(#{&})) $font-family;
+    }
+
+    &2 {
+        font: map-get($font-weights, "bold") map-get($font-sizes, quote(#{&})) $font-family;
+    }
+
+    &3 {
+        font: map-get($font-weights, "bold") map-get($font-sizes, quote(#{&})) $font-family;
     }
 }
 
-.cuadrado{
-    @include avatar(100px);
+a {
+    text-decoration: none;
+    color: $default-foreground;
 }
 
-.redondo{
-    @include avatar(100px, $circulo: true);
+/* HEADER *************************************************************************************************************/
+
+header {
+    text-align: center;
+    background-color: $default-background;
+    padding: 0.5em;
+
+    img {
+        width: 10%;
+        float: left;
+    }
+
+    h1,
+    h2 {
+        width: 90%;
+        margin: $default-margin;
+    }
+
 }
 
-$light-background: #f2ece4;
-$light-text: #036;
-$dark-background: #6b717f;
-$dark-text: #d2e1dd;
+/* NAV ****************************************************************************************************************/
 
-@mixin color-tema ($light-theme: true){
-    @if $light-theme{
-        background-color: $light-background;
-        color: $light-text;
-    }@else{
-        background-color: $dark-background;
-        color: $dark-text;
+nav {
+    background-color: $default-background;
+    padding: 0.1em;
+    margin: 0.5em 0 0 0;
+    text-align: center;
+    text-transform: uppercase;
+
+    ul {
+        list-style: none;
+        margin: $default-margin;
+
+        li {
+            display: inline-block;
+            margin: $default-margin;
+            padding: 0.2em;
+            font: map-get($font-weights, "bold") map-get($font-sizes, quote(#{&})) $font-family;
+
+            a {
+                font-weight: map-get($font-weights, "regular");
+
+                &:hover {
+                    text-decoration: underline;
+                    font-weight: map-get($font-weights, "bold");
+                }
+            }
+        }
     }
 }
-.banner{
-    @include color-tema($light-theme: false);
-    body.dark &{
-        @include color-tema($light-theme: false);
-    }
+
+/* SECTION ************************************************************************************************************/
+
+section {
+    min-height: 20em;
 }
 
-$base-color: $light-text;
+/* FOOTER *************************************************************************************************************/
 
-@function color-aleatorio($tono:false) {
-    @if $tono == 'rojo'{
-        @return rgb(random(256)-1, 0, 0);
-    }@else if $tono == 'verde'{
+footer {
+    text-align: center;
 
-    @return rgb(0, random(256)-1, 0);
+    div {
+        background-color: $default-background;
+        margin-bottom: 0.5em;
+        padding: 0.2em 0 0 0;
 
-    }@else if $tono == 'azul'{
-
-    @return rgb(0, 0, random(256)-1);
-
-    }@else {
-
-       @return rgb(random(256)-1, random(256)-1, random(256)-1);
-
+        img {
+            width: 3em;
+        }
     }
-}
 
-@for $i from 1 through 5 {
-    li:nth-child(#{$i}) {
-        background-color: color-aleatorio();
+    p {
+        background-color: $default-background;
+        margin: $default-margin;
+        padding: 0.1em 0;
+        font: map-get($font-weights, "light") map-get($font-sizes, quote(#{&})) $font-family;
+
+        & a:hover {
+            text-decoration: underline;
+            font-weight: map-get($font-weights, "bold");
+        }
     }
 }
