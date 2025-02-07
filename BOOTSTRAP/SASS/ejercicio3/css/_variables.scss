@@ -72,7 +72,7 @@ $cuerpo: map-get($font-weights, "regular") map-get($font-sizes, "cuerpo") $font-
         $aleatorio : color-aleatorio(null);
     }
 
-    $lista-colores: append($lista-colores, $aleatorio) !global;
+    $lista-colores: append($lista-colores, $aleatorio);
 
     @return $aleatorio;
 
@@ -86,7 +86,7 @@ $cuerpo: map-get($font-weights, "regular") map-get($font-sizes, "cuerpo") $font-
     @for $i from 1 through 3 {
 
         h#{$i} {
-            font: map-get($font-weights, "bold") map-get($font-sizes, "h" +$i) $font-family;
+            font: map-get($font-weights, "bold") map-get($font-sizes, "h" (+$i)) $font-family;
             margin: $default-margin;
         }
 
