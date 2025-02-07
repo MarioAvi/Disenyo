@@ -22,6 +22,7 @@ $separador-margin: 0.5em 0 0 0;
 
 $default-foreground: rgb(30, 30, 30);
 $default-background: #eee;
+$lista-colores: [];
 
 
 // VARIABLES COMPUESTAS ////////////////////////////////////////////////////////////////////////////////////////////////
@@ -75,7 +76,7 @@ $cuerpo: map-get($font-weights, "regular") map-get($font-sizes, "cuerpo") $font-
     $lista-colores: append($lista-colores, $aleatorio);
 
     @return $aleatorio;
-
+    
 }
 
 

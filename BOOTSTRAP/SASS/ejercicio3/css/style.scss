@@ -39,7 +39,7 @@ header {
     padding: 0.5em;
 
     img {
-        width: 10%;
+        max-width: 7%;
         float: left;
     }
 
@@ -56,7 +56,7 @@ header {
     @media (max-width: 768px) {
 
         img {
-            width: 5em;
+            max-width: 5em;
             float: none;
         }
 
