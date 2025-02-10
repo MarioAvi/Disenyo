@@ -2,8 +2,44 @@
     width: 100px;
     height: 100px;
     background-color: blue;
+    animation: venir 2s ease both;
 }
 
-.animacion1{
-    transform: translate(100px, 50px);
+.animacion1:hover{
+    animation: ir 2s ease both;
+}
+
+@keyframes entradaizq {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes entradader {
+    0% {
+        opacity: 0;
+        transform: translateX(50px) translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.imagen{
+    width: 100%;
+    animation: entradader 1s ease;
+}
+
+h1{
+    animation: entradaizq 1s ease;
+}
+
+p{
+    animation: entradaizq 1s ease;
 }
