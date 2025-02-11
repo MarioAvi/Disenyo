@@ -20,7 +20,7 @@ body{background-color:#eee;}
 	border-color: #e4e4e4 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #e4e4e4;
 }
 
-#generic_price_table .generic_content .generic_head_price .generic_head_content .head span{
+#generic_price_table .generic_content .generic_head_price .generic_head_content .head h3 .head h6{
 	color: #525252;
 }
 
@@ -49,29 +49,29 @@ body{background-color:#eee;}
 }
 #generic_price_table .generic_content .generic_feature_list ul li:hover{
 	background-color: #E4E4E4;
-	border-left: 5px solid #2ECC71;
+	border-left: 5px solid #e3004f;
 }
 
 #generic_price_table .generic_content .generic_price_btn a{
 	border: 1px solid #000000; 
-    color: #2ECC71;
+    color: #000000;
 } 
 
 #generic_price_table .generic_content.active .generic_head_price .generic_head_content .head_bg,
 #generic_price_table .generic_content:hover .generic_head_price .generic_head_content .head_bg{
-	border-color: #2ECC71 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #2ECC71;
+	border-color: #e3004f rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #e3004f;
 	color: #fff;
 }
 
-#generic_price_table .generic_content:hover .generic_head_price .generic_head_content .head span,
-#generic_price_table .generic_content.active .generic_head_price .generic_head_content .head span{
+#generic_price_table .generic_content:hover .generic_head_price .generic_head_content .head,
+#generic_price_table .generic_content.active .generic_head_price .generic_head_content .head{
 	color: #fff;
 }
 
 #generic_price_table .generic_content:hover .generic_price_btn a,
 #generic_price_table .generic_content.active .generic_price_btn a{
-	background-color: #2ECC71;
-	color: #fff;
+	background-color: #e3004f;
+	color: #ffffff;
 } 
 #generic_price_table{
 	margin: 50px 0 50px 0;
@@ -104,7 +104,7 @@ body{background-color:#eee;}
 }
 
 #generic_price_table .generic_content .generic_head_price .generic_head_content .head{
-	padding-top: 20px;
+	padding-top: 25px;
 	position: relative;
 	z-index: 1;
 }
@@ -214,10 +214,6 @@ body{background-color:#eee;}
 #generic_price_table .generic_content .generic_price_btn a,
 #generic_price_table .generic_content:hover .generic_price_btn a{
 	transition: all 0.3s ease-in-out 0s;
-	-moz-transition: all 0.3s ease-in-out 0s;
-	-ms-transition: all 0.3s ease-in-out 0s;
-	-o-transition: all 0.3s ease-in-out 0s;
-	-webkit-transition: all 0.3s ease-in-out 0s;
 } 
 @media (max-width: 320px) {	
 }
@@ -288,7 +284,7 @@ body{background-color:#eee;}
 	transition: all 0.3s ease-in-out 0s;
 }
 #generic_price_table_home .emerald{
-	background: #2ECC71;
+	background: #e3004f;
 	transition: all 0.3s ease-in-out 0s;
 }
 #generic_price_table_home .grey{
