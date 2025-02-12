@@ -1,7 +1,40 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700italic,700,900italic,900);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900);
-body{background-color:#eee;}
+
+@keyframes entradaArriba {
+    0% {
+        opacity: 0;
+        transform: translateY(-25px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.arriba{
+	animation: entradaArriba 1.5s;
+}
+
+@keyframes entradaAbajo {
+    0% {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.abajo{
+	animation: entradaAbajo 1.5s;
+}
+
+body{
+	background-color:#eee;
+}
 
 #generic_price_table{
 	background-color: #f0eded;
@@ -35,24 +68,25 @@ body{background-color:#eee;}
 	border-color: #e4e4e4 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #e4e4e4;
 }
 
-#generic_price_table .generic_content .generic_head_price .generic_head_content .head h3 .head h6{
-	color: #525252;
+#generic_price_table .generic_content .generic_head_price .generic_head_content .head h3 .head h6,
+#generic_price_table .price-heading h6{
+	color: #30353A;
 }
 
 #generic_price_table .generic_content .generic_head_price .generic_price_tag .price .sign{
-    color: #414141;
+    color: #30353A;
 }
 
 #generic_price_table .generic_content .generic_head_price .generic_price_tag .price .currency{
-    color: #414141;
+    color: #30353A;
 }
 
 #generic_price_table .generic_content .generic_head_price .generic_price_tag .price .cent{
-    color: #414141;
+    color: #30353A;
 }
 
 #generic_price_table .generic_content .generic_head_price .generic_price_tag .month{
-    color: #414141;
+    color: #30353A;
 }
 
 #generic_price_table .generic_content .generic_feature_list ul li{	
@@ -60,21 +94,35 @@ body{background-color:#eee;}
 }
 
 #generic_price_table .generic_content .generic_feature_list ul li span{
-	color: #414141;
-}
-#generic_price_table .generic_content .generic_feature_list ul li:hover{
-	background-color: #E4E4E4;
-	border-left: 5px solid #e3004f;
+	color: #575757;
 }
 
 #generic_price_table .tabla-especial .generic_content .generic_feature_list ul li:hover{
 	background-color: #E4E4E4;
-	border-left: 5px solid #B8860B;
+	border-left: 10px solid #B8860B;
 }
 
+#generic_price_table .generic_content .generic_feature_list ul li:hover{
+	background-color: #E4E4E4;
+	border-left: 10px solid #e3004f;
+}
+
+#generic_price_table .tabla-especial .generic_content .generic_feature_list ul li{
+	border-left: 0px solid #B8860B;
+}
+
+#generic_price_table .generic_content .generic_feature_list ul li{
+	border-left: 0px solid #e3004f;
+}
+
+#generic_price_table .tabla-especial .generic_content .generic_price_btn a{
+	border: 2px solid #B8860B; 
+    color: #B8860B;
+} 
+
 #generic_price_table .generic_content .generic_price_btn a{
-	border: 1px solid #000000; 
-    color: #000000;
+	border: 2px solid #e3004f; 
+    color: #e3004f;
 } 
 
 #generic_price_table .generic_content:hover .generic_head_price .generic_head_content .head_bg{
@@ -87,13 +135,15 @@ body{background-color:#eee;}
 	color: #fff;
 }
 
-#generic_price_table .generic_content:hover .generic_price_btn:hover a{
-	background-color: #e3004f;
+#generic_price_table .generic_content:hover .generic_price_btn a:hover{
+	background-color: #30353A;
+	border: 2px solid #30353A;
 	color: #ffffff;
 }
 
-#generic_price_table .tabla-especial .generic_content:hover .generic_price_btn:hover a{
-	background-color: #B8860B;
+#generic_price_table .tabla-especial .generic_content:hover .generic_price_btn a:hover{
+	background-color: #30353A;
+	border: 2px solid #30353A;
 	color: #ffffff;
 } 
 
@@ -128,19 +178,32 @@ body{background-color:#eee;}
 }
 
 #generic_price_table .generic_content .generic_head_price .generic_head_content .head{
-	padding-top: 25px;
+	padding-top: 30px;
 	position: relative;
 	z-index: 1;
 }
 
-#generic_price_table .generic_content .generic_head_price .generic_head_content .head span{
-    font-family: "Raleway",sans-serif;
-    font-size: 28px;
-    font-weight: 400;
+#generic_price_table .generic_content .generic_head_price .generic_head_content .head h6,
+#generic_price_table .price-heading h6{
+    font-size: 15px;
+    font-weight: bold;
     letter-spacing: 2px;
     margin: 0;
     padding: 0;
     text-transform: uppercase;
+}
+
+#generic_price_table .generic_content .generic_head_price .generic_head_content .head h3{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+#generic_price_table .price-heading h1{
+	font-size: 35px;
+    font-weight: bold;
+
 }
 
 #generic_price_table .generic_content .generic_head_price .generic_price_tag{
@@ -155,14 +218,14 @@ body{background-color:#eee;}
     display: inline-block;
     font-family: "Lato",sans-serif;
     font-size: 28px;
-    font-weight: 400;
+    font-weight: bold;
     vertical-align: middle;
 }
 
 #generic_price_table .generic_content .generic_head_price .generic_price_tag .price .currency{
     font-family: "Lato",sans-serif;
     font-size: 60px;
-    font-weight: 300;
+    font-weight: bold;
     letter-spacing: -2px;
     line-height: 60px;
     padding: 0;
@@ -173,14 +236,14 @@ body{background-color:#eee;}
     display: inline-block;
     font-family: "Lato",sans-serif;
     font-size: 24px;
-    font-weight: 400;
+    font-weight: bold;
     vertical-align: bottom;
 }
 
 #generic_price_table .generic_content .generic_head_price .generic_price_tag .month{
     font-family: "Lato",sans-serif;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: bold;
     letter-spacing: 3px;
     vertical-align: bottom;
 }
@@ -210,12 +273,11 @@ body{background-color:#eee;}
 #generic_price_table .generic_content .generic_price_btn a{
     border-radius: 50px;
     display: inline-block;
-    font-family: "Lato",sans-serif;
-    font-size: 18px;
+    font-size: 15px;
+	font-weight: bold;
     outline: medium none;
-    padding: 12px 30px;
+    padding: 12px 50px;
     text-decoration: none;
-    text-transform: uppercase;
 }
 
 #generic_price_table .generic_content:hover,
@@ -231,20 +293,7 @@ body{background-color:#eee;}
 #generic_price_table .generic_price_btn a {
     transition: all 0.3s ease-in-out;
 }
-.arriba{
-	animation: entradaArriba 1.5s;
-}
 
-@keyframes entradaArriba {
-    0% {
-        opacity: 0;
-        transform: translateY(-50px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-}
 
 @media (max-width: 320px) {	
 }
@@ -278,7 +327,7 @@ body{background-color:#eee;}
     text-align: center;
 }
 .price-heading h1{
-	color: #666;
+	color: #30353A;
 	margin: 0;
 	padding: 0 0 50px 0;
 }
