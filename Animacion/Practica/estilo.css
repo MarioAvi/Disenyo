@@ -52,6 +52,11 @@ body{
 	color: #fff;
 }
 
+#generic_price_table .generic_content:hover .generic_head_price .generic_head_content .head_bg{
+	border-color: #e3004f rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #e3004f;
+	color: #fff;
+}
+
 #generic_price_table .generic_content:hover{
 	border: 5px solid #e3004f;
 }
@@ -68,9 +73,8 @@ body{
 	border-color: #e4e4e4 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #e4e4e4;
 }
 
-#generic_price_table .generic_content .generic_head_price .generic_head_content .head h3 .head h6,
 #generic_price_table .price-heading h6{
-	color: #30353A;
+	color: #e3004f;
 }
 
 #generic_price_table .generic_content .generic_head_price .generic_price_tag .price .sign{
@@ -125,27 +129,27 @@ body{
     color: #e3004f;
 } 
 
-#generic_price_table .generic_content:hover .generic_head_price .generic_head_content .head_bg{
-	border-color: #e3004f rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #e3004f;
+#generic_price_table .generic_content:hover .generic_head_price .generic_head_content .head *,
+#generic_price_table .tabla-especial .generic_content:hover .generic_head_price .generic_head_content .head *
+{
 	color: #fff;
 }
 
-#generic_price_table .generic_content:hover .generic_head_price .generic_head_content .head,
-#generic_price_table .generic_content.active .generic_head_price .generic_head_content .head{
-	color: #fff;
+#generic_price_table .generic_content .generic_head_price .generic_head_content .head h6{
+	color: #e3004f;
 }
 
-#generic_price_table .generic_content:hover .generic_price_btn a:hover{
-	background-color: #30353A;
-	border: 2px solid #30353A;
-	color: #ffffff;
+#generic_price_table .tabla-especial .generic_content .generic_head_price .generic_head_content .head h6{
+	color: #B8860B;
 }
 
+#generic_price_table .generic_content:hover .generic_price_btn a:hover,
 #generic_price_table .tabla-especial .generic_content:hover .generic_price_btn a:hover{
 	background-color: #30353A;
 	border: 2px solid #30353A;
 	color: #ffffff;
-} 
+}
+
 
 #generic_price_table{
 	margin: 50px 0 50px 0;
@@ -330,21 +334,4 @@ body{
 	color: #30353A;
 	margin: 0;
 	padding: 0 0 50px 0;
-}
-
-.bottom_btn{
-	background-color: #333333;
-    color: #ffffff;
-    display: table;
-    font-size: 28px;
-    margin: 60px auto 20px;
-    padding: 10px 25px;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.bottom_btn:hover{
-	background-color: #666;
-	color: #FFF;
-	text-decoration:none;
 }
