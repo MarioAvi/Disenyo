@@ -32,6 +32,20 @@
 	animation: entradaAbajo 1.5s;
 }
 
+/* .zoomIn:hover{
+	animation: zoomIn 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	animation-direction: alternate;
+}
+
+@keyframes zoomIn {
+	0% {
+	  transform: scale(1);
+	}
+	100% {
+	  transform: scale(1.05);
+	}
+} */
+
 body{
 	background-color:#eee;
 }
