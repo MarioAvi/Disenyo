@@ -32,20 +32,6 @@
 	animation: entradaAbajo 1.5s;
 }
 
-/* .zoomIn:hover{
-	animation: zoomIn 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	animation-direction: alternate;
-}
-
-@keyframes zoomIn {
-	0% {
-	  transform: scale(1);
-	}
-	100% {
-	  transform: scale(1.05);
-	}
-} */
-
 body{
 	background-color:#eee;
 }
@@ -87,6 +73,25 @@ body{
 	border-color: #e4e4e4 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #e4e4e4;
 }
 
+.aparicionTexto {
+	animation: aparicionTexto 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@keyframes aparicionTexto {
+	0% {
+	  letter-spacing: -0.5em;
+	  transform: translateZ(-300px) translateY(-100px);
+	  opacity: 0;
+	}
+	40% {
+	  opacity: 0.6;
+	}
+	100% {
+	  transform: translateZ(0) translateY(0);
+	  opacity: 1;
+	}
+  }
+  
 #generic_price_table .price-heading h6{
 	color: #e3004f;
 }
@@ -221,7 +226,6 @@ body{
 #generic_price_table .price-heading h1{
 	font-size: 35px;
     font-weight: bold;
-
 }
 
 #generic_price_table .generic_content .generic_head_price .generic_price_tag{
