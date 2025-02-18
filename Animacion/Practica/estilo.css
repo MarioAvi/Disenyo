@@ -67,6 +67,12 @@ body{
 
 #generic_price_table .generic_content .generic_head_price{
 	background-color: #f6f6f6;
+	animation: sombraTextoReverso 0.6s both;
+}
+
+#generic_price_table .generic_content .generic_head_price:hover{
+	background-color: #f6f6f6;
+	animation: sombraTexto 0.6s both;
 }
 
 #generic_price_table .generic_content .generic_head_price .generic_head_content .head_bg{
@@ -90,7 +96,25 @@ body{
 	  transform: translateZ(0) translateY(0);
 	  opacity: 1;
 	}
-  }
+}
+
+ @keyframes sombraTexto {
+	0% {
+	  text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+	}
+	100% {
+	  text-shadow: 0 0 18px rgba(0, 0, 0, 0.70);
+	}
+}
+
+@keyframes sombraTextoReverso {
+	0% {
+		text-shadow: 0 0 18px rgba(0, 0, 0, 0.70);
+	}
+	100% {
+		text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+	}
+}
   
 #generic_price_table .price-heading h6{
 	color: #e3004f;
