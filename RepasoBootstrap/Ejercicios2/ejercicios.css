@@ -1,0 +1,106 @@
+.container {
+    background-color: rgba(255, 0, 0, 0.2); /* Rojo semitransparente */
+    border: 1px solid red;
+  }
+  
+  .row {
+    background-color: rgba(0, 255, 0, 0.2); /* Verde semitransparente */
+    font-weight: bold;
+
+  }
+  
+  .azul {
+    background-color: blue; /* Azul semitransparente */
+    border: 1px solid black;
+    padding: 20px;
+  }
+  .rojo {
+    background-color: red; /* Azul semitransparente */
+    border: 1px solid black;
+    padding: 20px;
+  }
+  .verde {
+    background-color: green; /* Azul semitransparente */
+    border: 1px solid black;
+    padding: 20px;
+  }
+  .marron {
+    background-color: rgb(248, 157, 73); /* Azul semitransparente */
+    border: 1px solid black;
+    padding: 20px;
+  }
+  .rosa {
+    background-color: rgb(255, 0, 140); /* Azul semitransparente */
+    border: 1px solid black;
+    padding: 20px;
+  }
+  .cian {
+    background-color: cyan; /* Azul semitransparente */
+    border: 1px solid black;
+    padding: 20px;
+  }
+  .gris {
+    background-color: gray; /* Azul semitransparente */
+    border: 1px solid black;
+    padding: 20px;
+  }
+  .header{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(248, 157, 73);
+    border: 1px solid black;
+    padding: 20px;
+  }
+  .uno{
+    display: flex;
+    justify-content: left;
+    background-color: red;
+    border: 1px solid black;
+    padding: 20px;
+  }
+  .dos{
+    display: flex;
+    justify-content: center;
+    background-color: cyan;
+    border: 1px solid black;
+    padding: 20px;
+  }
+  .tres{
+    display: flex;
+    justify-content: right;
+    background-color: red;
+    border: 1px solid black;
+    padding: 20px;
+  }
+  .footer1, .footer2{
+    display: flex;
+    justify-content: center;
+    background-color: yellow;
+    border: 1px solid black;
+    padding: 20px;
+  }
+
+/* MEDIA QUERIES */
+
+  @media (min-width: 576px){
+    .header{
+      background-color: cyan;
+      justify-content: left;
+    }
+    .dos{
+      background-color: red;
+      justify-content: right;
+    }
+    .tres{
+      background-color: green;
+      justify-content: center;
+    }
+  }
+
+  @media (min-width: 768px){
+    .uno, .dos, .tres{
+      background-color: red;
+      justify-content: center;
+    }
+  }
+  
