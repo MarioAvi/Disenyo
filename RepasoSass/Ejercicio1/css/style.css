@@ -1,0 +1,19 @@
+html {
+  background-color: #CCC;
+}
+
+body {
+  color: #F00;
+  font: 100% Arial, sans-serif;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: #000;
+}
+nav li {
+  padding: 6px 12px;
+  display: inline-block;
+}/*# sourceMappingURL=style.css.map */
