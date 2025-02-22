@@ -7,22 +7,17 @@ html{
 }
 
 body{
-    font: $cuerpo
+    font: $cuerpo;
+    color: $default-foreground;
+    @include fuente-titulos
 }
 
-h {
-    &1{
-        font: map-get($font-weights, "bold") map-get($font-sizes, quote(#{&})) $font-family
-    }
-
-    &2{
-        font: map-get($font-weights, "bold") map-get($font-sizes, quote(#{&})) $font-family
-    }
-    
-    &3{
-        font: map-get($font-weights, "bold") map-get($font-sizes, quote(#{&})) $font-family
+@media (max-width: 768px) {
+    body {
+        margin: $default-margin;
     }
 }
+
 a {
     text-decoration: none;
     color: $default-foreground;
@@ -40,9 +35,29 @@ header{
         float: left;
     }
 
-    h1, h2{
+    h1{
         width: 90%;
-        margin: $default-margin;
+        margin: color-aleatorio("red");
+    }
+
+    h2{
+        width: 90%;
+        margin: color-aleatorio("red");
+    }
+
+    @media (max-width: 768px) {
+
+        img {
+            width: 5em;
+            float: none;
+        }
+
+        h1,
+        h2 {
+            float: none;
+            width: 100%;
+        }
+
     }
 }
 
@@ -50,21 +65,16 @@ header{
 
 nav{
     background-color: $default-background;
+    padding: 0.1em;
+    margin: $separador-margin;
     text-align: center;
     text-transform: uppercase;
 
     ul{
-        list-style: none;
-        margin: $default-margin;
-
-        li{
-            display: inline-block;
-            margin: $default-margin;
-            font: map-get($font-weights, "bold") map-get($font-sizes, "nav ul li") $font-family;
+        @include lista-horizontal;
 
             a{
                 font-weight: map-get($font-weights, "regular");
-                margin: 5px;
 
                 &:hover{
                     text-decoration: underline;
@@ -72,19 +82,71 @@ nav{
                 }
             }
             
-        }
+        
     }
+}
+
+@media (max-width: 768px) {
+
+    nav {
+        margin: $default-margin;
+    }
+
+    ul li {
+        width: 100%;
+    }
+
 }
 
 //SECTION/////////////////////////////////////////////////////////////////////
 
-section{
-    min-height: 20em;;
+section {
+
+    margin: $separador-margin;
+
+    article {
+        width: 33%;
+        display: inline-block;
+        min-height: 16em;
+
+        img {
+            width: 25%;
+            float: left;
+            padding: 0 1em 0 0;
+        }
+
+        div {
+            width: 65%;
+            float: left;
+            padding: 1em 1em 0 0;
+        }
+
+    }
+
+    @include fondo-article;
+
+    @media (max-width: 992px) {
+
+        article {
+            width: 49.7%;
+        }
+
+    }
+
+    @media (max-width: 768px) {
+
+        article {
+            width: 100%;
+            display: block;
+        }
+
+    }
 }
 
 //FOOTER//////////////////////////////////////////////////////////////////////
 
 footer{
+    margin: $separador-margin;
     text-align: center;
     div{
         background-color: $default-background;
@@ -106,4 +168,17 @@ footer{
             font-weight: map-get($font-weights, "bold");
         }
     }
+}
+
+@media (max-width: 768px) {
+
+    footer {
+
+        margin: $default-margin;
+
+        p {
+            margin: $default-margin;
+        }
+    }
+
 }
