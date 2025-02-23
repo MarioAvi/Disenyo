@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+h1 {
+  font: 900 300% "Raleway";
+  color: rgb(0, 121, 0);
+}
+h2 {
+  font: 700 200% "Raleway";
+  color: rgb(0, 159, 0);
+}
+h3 {
+  font: 500 150% "Raleway";
+  color: rgb(0, 16, 0);
+}
+
+p {
+  font: 300 1rem "Raleway";
+}
+
+.zoom:hover {
+  animation: zoom 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+.fondo1 {
+  background-color: rgba(239, 246, 238, 0.5);
+}
+
+.fondo2 {
+  background-color: rgba(46, 147, 60, 0.5);
+}
+
+.logo {
+  width: 23px;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("../img/imagen.bmp");
+  /* Set a specific height */
+  min-height: 400px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgb(179, 179, 179);
+}
+
+.parrafo {
+  text-align: center;
+}
+
+.productos {
+  max-height: 300px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 10px;
+}
+
+.imagenEquipo {
+  width: 200px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.mapa {
+  width: 100%;
+}
+
+.contacto {
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .productos {
+    width: 90%;
+  }
+  .contacto {
+    text-align: center;
+  }
+}
+@media (max-width: 992px) {
+  .productos {
+    width: 90%;
+  }
+  .parrafo {
+    text-align: justify;
+  }
+}/*# sourceMappingURL=estilos.css.map */

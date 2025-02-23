@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import 'funciones';
+@import 'variables';
+
+h{
+    &1{
+        font: map-get($peso, "h1") map-get($tamaño, "h1") $font;
+        color: coloresVerdes();
+    }
+
+    &2{
+        font: map-get($peso, "h2") map-get($tamaño, "h2") $font;
+        color: coloresVerdes();
+    }
+
+    &3{
+        font: map-get($peso, "h3") map-get($tamaño, "h3") $font;
+        color: coloresVerdes();
+    }
+}
+
+p{
+    font: map-get($peso, "cuerpo") map-get($tamaño, "cuerpo") $font;
+}
+
+.zoom:hover {
+	animation: zoom 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+ @keyframes zoom {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.1);
+    }
+  }
+  
+
+.fondo1{
+    background-color: rgba($background1, $opacity);
+}
+
+.fondo2{
+    background-color: rgba($background2, $opacity);
+}
+
+.logo{
+    width: 23px;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("../img/imagen.bmp");
+  
+    /* Set a specific height */
+    min-height: 400px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(179, 179, 179);
+  }
+
+  .parrafo{
+    text-align: center;
+  }
+
+  .productos{
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+    padding: 10px;
+  }
+
+  .imagenEquipo{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+
+  .mapa{
+    width: 100%;
+  }
+
+  .contacto{
+    text-align: justify;
+  }
+
+  @media (max-width: 768px) {
+    .productos{
+        width: 90%;
+    }
+
+    .contacto{
+        text-align: center;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .productos{
+        width: 90%;
+    }
+
+    .parrafo{
+        text-align: justify;
+    }
+  }
